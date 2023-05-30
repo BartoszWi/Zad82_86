@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script language="JavaScript">
+        
+
+        function Przycisk1_Wisniewski() {
+            pokaz1.innerHTML="Ostatnio zmodyfikowany : "+document.lastModified;
+        }
+
+        function Przycisk2_Wisniewski() {
+            pokaz2.innerHTML="Aktualny Data : "+dzis_wis.getDate()+"."+dzis_wis.getMonth()+"."+dzis_wis.getFullYear();
+        }
+        
+        
+        function Przycisk3_Wisniewski() {
+            pokaz3.innerHTML="Aktualny czas : "+dzis_wis.getHours()+":"+dzis_wis.getMinutes();
+        }
+
+
+
+        dzis_wis = new Date();
+        
+       </script>
+    </head>
+
+
+    <body>
+
+        <br>
+        <img src="zapytajnik.png" height="150" size="150" onclick="Przycisk1_Wisniewski()">
+        <img src="zapytajnik.png" height="150" size="150" onclick="Przycisk2_Wisniewski()">
+        <img src="zapytajnik.png" height="150" size="150" onclick="Przycisk3_Wisniewski()">
+        <table tutaj obramowanie>
+            <tr id="pokaz1"></tr>
+            <tr id="pokaz2"></tr>
+            <tr id="pokaz3"></tr>
+        </table>
+    </body>
+</html>

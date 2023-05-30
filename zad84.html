@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script language="JavaScript">
+
+        function Wisniewski_start() {
+            start_wis = new Date();
+            poczatek_wis=start_wis.getTime()
+        }
+
+        function Wisniewski_stop() {
+            stop_wis = new Date();
+            koniec_wis=stop_wis.getTime()
+            roznica_wis=koniec_wis-poczatek_wis;
+            pokaz1.innerHTML=roznica_wis/1000+" s";
+        }       
+
+
+        dzis_wis = new Date();
+        document.write("<br>Aktualny czas : ",dzis_wis.getHours(),":",dzis_wis.getMinutes());
+        </script>
+    </head>
+
+
+    <body>
+
+        <br>
+        <input type="button" name="Button1" value="START stoper" onclick="Wisniewski_start()">
+        <input type="button" name="Button2" value="STOP stoper" onclick="Wisniewski_stop()">
+        
+        <table tutaj obramowanie>
+            <tr id="pokaz1"></tr>
+        </table>
+    </body>
+</html>
